@@ -17,7 +17,6 @@ const reverse2 = (str) => {
   let reversed = '';
   for (const currentCharacter of str) {
     reversed = `${currentCharacter}${reversed}`;
-    debugger;
   }
   return reversed;
 };
