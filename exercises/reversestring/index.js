@@ -6,6 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+// Solution 1
 const reverse1 = (str) => {
   return str
     .split('')
@@ -13,6 +14,7 @@ const reverse1 = (str) => {
     .join('');
 };
 
+// Solution 2
 const reverse2 = (str) => {
   let reversed = '';
   for (const currentCharacter of str) {
@@ -21,6 +23,7 @@ const reverse2 = (str) => {
   return reversed;
 };
 
+// Solution 3
 const reverse3 = (str) => {
   return str
     .split('')
