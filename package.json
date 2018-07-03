@@ -1,0 +1,14 @@
+{
+  "name": "algorithms-javascript",
+  "version": "1.0.0",
+  "description": "Algorithms & Data Structures in JavaScript!",
+  "main": "index.js",
+  "repository": "git@github.com:IamManchanda/algorithms-javascript.git",
+  "author": "Harry Manchanda <harmanmanchanda182@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
