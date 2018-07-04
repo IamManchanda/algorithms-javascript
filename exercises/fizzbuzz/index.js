@@ -15,7 +15,7 @@
 // Solution 1
 const fizzBuzz1 = (n) => {
   for (let i = 1; i <= n; i += 1) {
-    if (i % 15 === 0) { console.log('fizzbuzz'); } 
+    if (i % (3 * 5) === 0) { console.log('fizzbuzz'); } 
     else if (i % 3 === 0) { console.log('fizz'); }
     else if (i % 5 === 0) { console.log('buzz'); }
     else { console.log(i); }
@@ -27,7 +27,7 @@ const fizzBuzz1 = (n) => {
 const fizzBuzz2 = (n) => {
   const range = (count) => Array.from({ length: count }, (v, i) => i + 1);
   for (i of range(n)) {
-    if (i % 15 === 0) { console.log('fizzbuzz'); } 
+    if (i % (3 * 5) === 0) { console.log('fizzbuzz'); } 
     else if (i % 3 === 0) { console.log('fizz'); }
     else if (i % 5 === 0) { console.log('buzz'); }
     else { console.log(i); }
