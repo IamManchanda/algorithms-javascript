@@ -1,13 +1,8 @@
 const fizzBuzz = require('./index');
 
 test('fizzBuzz function is defined', () => {
-  expect(fizzBuzz).toBeDefined();
-});
-
-test('Calling fizzbuzz with `5` prints out 5 statements', () => {
-  fizzBuzz(5);
-
-  expect(console.log.mock.calls.length).toEqual(5);
+  expect(fizzBuzz)
+    .toBeDefined();
 });
 
 test('Calling fizzbuzz with 15 prints out the correct values', () => {
