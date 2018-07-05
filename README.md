@@ -1,5 +1,7 @@
 # Algorithms & Data Structures in JavaScript.
 
+This repository has been made while learning [from this tutorial](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/) by [Stephen Grider](https://twitter.com/ste_grider).
+
 ## Where are Questions and their respective Answers? What about Tests?
 
 - **Question:** All folders have specific `README.md` where respective question has been asked.
