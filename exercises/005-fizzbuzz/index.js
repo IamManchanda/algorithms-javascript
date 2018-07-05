@@ -24,8 +24,8 @@ const fizzBuzz1 = (n) => {
 
 // Solution 2
 // => https://codepen.io/IamManchanda/pen/KZXQYr
+const range = (count) => Array.from({ length: count }, (v, i) => i + 1); // Helper Function
 const fizzBuzz2 = (n) => {
-  const range = (count) => Array.from({ length: count }, (v, i) => i + 1);
   for (i of range(n)) {
     if (i % (3 * 5) === 0) { console.log('fizzbuzz'); } 
     else if (i % 3 === 0) { console.log('fizz'); }
@@ -35,5 +35,4 @@ const fizzBuzz2 = (n) => {
 };
 
 const fizzBuzz = fizzBuzz2;
-
 module.exports = fizzBuzz;

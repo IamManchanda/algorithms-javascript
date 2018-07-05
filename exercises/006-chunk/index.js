@@ -39,5 +39,4 @@ const chunk2 = (array, size) => {
 };
 
 const chunk = chunk2;
-
 module.exports = chunk;
