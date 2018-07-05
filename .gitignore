@@ -76,3 +76,6 @@ jspm_packages
 
 # Nuxt generate
 dist
+
+# Ignore Unsolved Exercises
+000-unsolved-exercises
