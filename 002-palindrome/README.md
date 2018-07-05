@@ -7,6 +7,6 @@ Given a string, return true if the string is a palindrome or false if it is not.
 ## Examples
 
 ```javascript
-palindrome("abba") === true
-palindrome("abcdefg") === false
+palindrome("abba") === true;
+palindrome("abcdefg") === false;
 ```

@@ -7,7 +7,7 @@ Write a function that accepts a string.  The function should capitalize the firs
 ## Examples
 
 ```javascript
-capitalize('a short sentence') === 'A Short Sentence'
-capitalize('a lazy fox') === 'A Lazy Fox'
-capitalize('look, it is working!') === 'Look, It Is Working!'
+capitalize('a short sentence') === 'A Short Sentence';
+capitalize('a lazy fox') === 'A Lazy Fox';
+capitalize('look, it is working!') === 'Look, It Is Working!';
 ```

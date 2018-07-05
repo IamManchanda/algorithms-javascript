@@ -7,7 +7,7 @@ Check to see if two provided strings are anagrams of eachother. One string is an
 ## Examples
 
 ```javascript
-anagrams('rail safety', 'fairy tales') === True
-anagrams('RAIL! SAFETY!', 'fairy tales') === True
-anagrams('Hi there', 'Bye there') === False
+anagrams('rail safety', 'fairy tales') === True;
+anagrams('RAIL! SAFETY!', 'fairy tales') === True;
+anagrams('Hi there', 'Bye there') === False;
 ```
