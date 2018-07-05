@@ -1,6 +1,6 @@
 # Algorithms & Data Structures in JavaScript.
 
-## Where are Questions and Answer? What about Tests?
+## Where are Questions and their respective Answers? What about Tests?
 
 - **Question:** All folders have specific `README.md` where respective question has been asked.
 - **Answers:** All folders have specific `index.js` where respective answer has been solved.
