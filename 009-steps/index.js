@@ -1,3 +1,4 @@
+// Solution 1
 const steps1 = (n) => {
   for (let row = 0; row < n; row += 1) {
     let stair = '';
@@ -9,6 +10,7 @@ const steps1 = (n) => {
   }
 };
 
+// Solution 2
 const steps2 = (n, row = 0, stair = '') => {
   if (n === row) { return; }
   if (n === stair.length) { 
