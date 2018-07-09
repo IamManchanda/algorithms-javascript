@@ -9,6 +9,7 @@ module.exports = {
     'arrow-body-style': 0,
     'arrow-parens': 0,
     'func-names': 0,
+    'consistent-return': 0,
     'no-underscore-dangle': 0,
     'symbol-description': 0,
     'brace-style': 0,
