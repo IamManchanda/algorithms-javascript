@@ -3,8 +3,7 @@ const steps1 = (n) => {
   for (let row = 0; row < n; row += 1) {
     let stair = '';
     for (let column = 0; column < n; column += 1) {
-      if (column <= row) { stair += '#'; } 
-      else { stair += ' '; }
+      column <= row ? stair += '#' : stair += ' ';
     }
     console.log(stair);
   }
