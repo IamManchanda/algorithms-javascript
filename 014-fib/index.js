@@ -16,12 +16,7 @@ const fib2 = (n) => {
 };
 
 // Solution 3 - Memoization/Recursive  & Linear => O(n)
-const slowFib = (n) => {
-  if (n < 2) { return n; }
-  // eslint-disable-next-line
-  return fib3(n - 1) + fib3(n - 2);
-};
-const memoize = (fn) => {
+const memoize = (fn) => { // Utility Memoize Function
   const cache = {};
   return (...args) => {
     if (cache[args]) { return cache[args]; }
@@ -29,7 +24,12 @@ const memoize = (fn) => {
     return cache[args];
   };
 };
-const fib3 = memoize(slowFib);
+
+let fib3 = (n) => {
+  if (n < 2) { return n; }
+  return fib3(n - 1) + fib3(n - 2);
+};
+fib3 = memoize(fib3);
 
 const fib = fib3;
 module.exports = fib;
