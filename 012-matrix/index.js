@@ -1,6 +1,6 @@
 const matrix = (n) => {
   const results = [];
-  for (let i = 0; i < n; i += 1) { results.push([]); }
+  for (let i = 0; i < n; i += 1) results.push([]);
   let counter = 1;
   let startColumn = 0;
   let endColumn = n - 1;

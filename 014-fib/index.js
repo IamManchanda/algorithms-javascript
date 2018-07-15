@@ -11,7 +11,7 @@ const fib1 = (n) => {
 
 // Solution 2 - Recursive & Exponential => O(2 ** n)
 const fib2 = (n) => {
-  if (n < 2) { return n; }
+  if (n < 2) return n;
   return fib2(n - 1) + fib2(n - 2);
 };
 
@@ -26,7 +26,7 @@ const memoize = (fn) => { // Utility Memoize Function
 };
 
 let fib3 = (n) => {
-  if (n < 2) { return n; }
+  if (n < 2) return n;
   return fib3(n - 1) + fib3(n - 2);
 };
 fib3 = memoize(fib3);
