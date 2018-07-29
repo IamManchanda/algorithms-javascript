@@ -56,7 +56,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('getFirst', () => {
+  describe('getFirst', () => {
     test('returns the first element', () => {
       const list = new LinkedList();
       list.insertFirst(1);
@@ -66,7 +66,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('getLast', () => {
+  describe('getLast', () => {
     test('returns the last element', () => {
       const list = new LinkedList();
       list.insertFirst(2);
