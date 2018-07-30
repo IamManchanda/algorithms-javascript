@@ -227,7 +227,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('insertAt', () => {
+  describe('insertAt', () => {
     test('inserts a new node with data at the 0 index when the list is empty', () => {
       const list = new LinkedList();
       list.insertAt('hi', 0);
