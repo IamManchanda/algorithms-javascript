@@ -148,7 +148,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('insertLast', () => {
+  describe('insertLast', () => {
     test('adds to the end of the list', () => {
       const list = new LinkedList();
       list.insertFirst('a');
@@ -174,7 +174,7 @@ describe('LinkedList', () => {
   });
   
   describe.skip('removeAt', () => {
-    test('removeAt doesnt crash on an empty list', () => {
+    test('doesnt crash on an empty list', () => {
       const list = new LinkedList();
       expect(() => {
         list.removeAt(0);
@@ -183,7 +183,7 @@ describe('LinkedList', () => {
       }).not.toThrow();
     });
   
-    test('removeAt doesnt crash on an index out of bounds', () => {
+    test('doesnt crash on an index out of bounds', () => {
       const list = new LinkedList();
       expect(() => {
         // eslint-disable-next-line no-shadow
@@ -193,7 +193,7 @@ describe('LinkedList', () => {
       }).not.toThrow();
     });
   
-    test('removeAt deletes the first node', () => {
+    test('deletes the first node', () => {
       const list = new LinkedList();
       list.insertLast(1);
       list.insertLast(2);
@@ -204,7 +204,7 @@ describe('LinkedList', () => {
       expect(list.getAt(0).data).toEqual(2);
     });
   
-    test('removeAt deletes the node at the given index', () => {
+    test('deletes the node at the given index', () => {
       const list = new LinkedList();
       list.insertLast(1);
       list.insertLast(2);
@@ -215,7 +215,7 @@ describe('LinkedList', () => {
       expect(list.getAt(1).data).toEqual(3);
     });
   
-    test('removeAt works on the last node', () => {
+    test('works on the last node', () => {
       const list = new LinkedList();
       list.insertLast(1);
       list.insertLast(2);
