@@ -76,7 +76,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('clear', () => {
+  describe('clear', () => {
     test('empties out the list', () => {
       const list = new LinkedList();
       expect(list.size()).toEqual(0);
@@ -90,7 +90,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('removeFirst', () => {
+  describe('removeFirst', () => {
     test('removes the first node when the list has a size of one', () => {
       const list = new LinkedList();
       list.insertFirst('a');
@@ -113,39 +113,36 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('removeLast', () => {
-    test('RemoveLast removes the last node when list is empty', () => {
+  describe('removeLast', () => {
+    test('removes the last node when list is empty', () => {
       const list = new LinkedList();
       expect(() => {
         list.removeLast();
       }).not.toThrow();
     });
   
-    test('RemoveLast removes the last node when list is length 1', () => {
+    test('removes the last node when list is length 1', () => {
       const list = new LinkedList();
       list.insertFirst('a');
       list.removeLast();
       expect(list.head).toEqual(null);
     });
   
-    test('RemoveLast removes the last node when list is length 2', () => {
+    test('removes the last node when list is length 2', () => {
       const list = new LinkedList();
       list.insertFirst('b');
       list.insertFirst('a');
-  
       list.removeLast();
-  
       expect(list.size()).toEqual(1);
       expect(list.head.data).toEqual('a');
     });
   
-    test('RemoveLast removes the last node when list is length 3', () => {
+    test('removes the last node when list is length 3', () => {
       const list = new LinkedList();
       list.insertFirst('c');
       list.insertFirst('b');
       list.insertFirst('a');
       list.removeLast();
-  
       expect(list.size()).toEqual(2);
       expect(list.getLast().data).toEqual('b');
     });
@@ -155,9 +152,7 @@ describe('LinkedList', () => {
     test('adds to the end of the list', () => {
       const list = new LinkedList();
       list.insertFirst('a');
-  
       list.insertLast('b');
-  
       expect(list.size()).toEqual(2);
       expect(list.getLast().data).toEqual('b');
     });
@@ -167,12 +162,10 @@ describe('LinkedList', () => {
     test('returns the node at given index', () => {
       const list = new LinkedList();
       expect(list.getAt(10)).toEqual(null);
-  
       list.insertLast(1);
       list.insertLast(2);
       list.insertLast(3);
       list.insertLast(4);
-  
       expect(list.getAt(0).data).toEqual(1);
       expect(list.getAt(1).data).toEqual(2);
       expect(list.getAt(2).data).toEqual(3);
