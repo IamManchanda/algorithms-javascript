@@ -158,7 +158,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('getAt', () => {
+  describe('getAt', () => {
     test('returns the node at given index', () => {
       const list = new LinkedList();
       expect(list.getAt(10)).toEqual(null);
@@ -173,7 +173,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('removeAt', () => {
+  describe('removeAt', () => {
     test('doesnt crash on an empty list', () => {
       const list = new LinkedList();
       expect(() => {
