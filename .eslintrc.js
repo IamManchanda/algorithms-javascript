@@ -24,6 +24,7 @@ module.exports = {
     'no-empty-function': 0,
     'no-useless-return': 0,
     'prefer-const': 0,
+    'max-len': 0,
     // Never use these last 3 in a real application... I mean never!
     'no-alert': 0,
     'no-console': 0,
