@@ -282,7 +282,7 @@ describe('LinkedList', () => {
     });
   });
   
-  describe.skip('forEach', () => {
+  describe('forEach', () => {
     test('applies a transform to each node', () => {
       const list = new LinkedList();
   
