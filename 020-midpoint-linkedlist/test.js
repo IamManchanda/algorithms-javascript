@@ -27,18 +27,18 @@ describe('Midpoint returns the middle node of an odd numbered list', () => {
 
 describe('Midpoint returns the node at the end of the first half of an even numbered list', () => {
   test('when the list has 2 elements', () => {
-    const l = new LinkedList();
-    l.insertLast('a');
-    l.insertLast('b');
-    expect(midpoint(l).data).toEqual('a');
+    const list = new LinkedList();
+    list.insertLast('a');
+    list.insertLast('b');
+    expect(midpoint(list).data).toEqual('a');
   });
 
   test('when the list has 4 elements', () => {
-    const l = new LinkedList();
-    l.insertLast('a');
-    l.insertLast('b');
-    l.insertLast('c');
-    l.insertLast('d');
-    expect(midpoint(l).data).toEqual('b');
+    const list = new LinkedList();
+    list.insertLast('a');
+    list.insertLast('b');
+    list.insertLast('c');
+    list.insertLast('d');
+    expect(midpoint(list).data).toEqual('b');
   });
 });
