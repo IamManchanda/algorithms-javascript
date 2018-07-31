@@ -87,22 +87,6 @@
               </td>
             </tr>
             <tr>
-              <td>insertFirst</td>
-              <td>(data)</td>
-              <td>-</td>
-              <td>
-                Creates a new Node from argument 'data' and assigns the resulting
-                node to the 'head' property.  Make sure to handle the case in which
-                the linked list already has a node assigned to the 'head' property.
-              </td>
-              <td>
-                <pre>
-                  const list = new LinkedList();
-                  list.insertFirst('Hi There'); // List has one node
-                </pre>
-              </td>
-            </tr>
-            <tr>
               <td>size</td>
               <td>-</td>
               <td>(integer)</td>
@@ -116,6 +100,52 @@
                   list.insertFirst('b');
                   list.insertFirst('c');
                   list.size(); // returns 3
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                clear
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                Empties the linked list of any nodes.
+              </td>
+              <td>
+                <pre>
+                  const list = new LinkedList();
+                  list.insertFirst('a');
+                  list.insertFirst('b');
+                  list.clear();
+                  list.size(); // returns 0
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                getAt
+              </td>
+              <td>
+                (integer)
+              </td>
+              <td>
+                (Node)
+              </td>
+              <td>
+                Returns the node at the provided index
+              </td>
+              <td>
+                <pre>
+                  const list = new List();
+                  list.insertFirst('a');
+                  list.insertFirst('b');
+                  list.insertFirst('c');
+                  list.getAt(1); // returns node with data 'b'
                 </pre>
               </td>
             </tr>
@@ -159,24 +189,25 @@
             </tr>
             <tr>
               <td>
-                clear
+                removeAt
+              </td>
+              <td>
+                (integer)
               </td>
               <td>
                 -
               </td>
               <td>
-                -
-              </td>
-              <td>
-                Empties the linked list of any nodes.
+                Removes node at the provided index
               </td>
               <td>
                 <pre>
-                  const list = new LinkedList();
+                  const list = new List();
                   list.insertFirst('a');
                   list.insertFirst('b');
-                  list.clear();
-                  list.size(); // returns 0
+                  list.insertFirst('c');
+                  list.removeAt(1);
+                  list.getAt(1); // returns node with data 'a'
                 </pre>
               </td>
             </tr>
@@ -230,76 +261,6 @@
             </tr>
             <tr>
               <td>
-                insertLast
-              </td>
-              <td>
-                (data)
-              </td>
-              <td>
-                -
-              </td>
-              <td>
-                Inserts a new node with provided data at the end of the chain
-              </td>
-              <td>
-                <pre>
-                  const list = new LinkedList();
-                  list.insertFirst('a');
-                  list.insertFirst('b');
-                  list.insertLast('c');
-                  list.getLast(); // returns node with data 'C'
-                </pre>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                getAt
-              </td>
-              <td>
-                (integer)
-              </td>
-              <td>
-                (Node)
-              </td>
-              <td>
-                Returns the node at the provided index
-              </td>
-              <td>
-                <pre>
-                  const list = new List();
-                  list.insertFirst('a');
-                  list.insertFirst('b');
-                  list.insertFirst('c');
-                  list.getAt(1); // returns node with data 'b'
-                </pre>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                removeAt
-              </td>
-              <td>
-                (integer)
-              </td>
-              <td>
-                -
-              </td>
-              <td>
-                Removes node at the provided index
-              </td>
-              <td>
-                <pre>
-                  const list = new List();
-                  list.insertFirst('a');
-                  list.insertFirst('b');
-                  list.insertFirst('c');
-                  list.removeAt(1);
-                  list.getAt(1); // returns node with data 'a'
-                </pre>
-              </td>
-            </tr>
-            <tr>
-              <td>
                 insertAt
               </td>
               <td>
@@ -321,6 +282,45 @@
                   list.insertFirst('c');
                   list.insertAt('Hi', 1)
                   list.getAt(1); // returns node with data 'Hi'
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>insertFirst</td>
+              <td>(data)</td>
+              <td>-</td>
+              <td>
+                Creates a new Node from argument 'data' and assigns the resulting
+                node to the 'head' property.  Make sure to handle the case in which
+                the linked list already has a node assigned to the 'head' property.
+              </td>
+              <td>
+                <pre>
+                  const list = new LinkedList();
+                  list.insertFirst('Hi There'); // List has one node
+                </pre>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                insertLast
+              </td>
+              <td>
+                (data)
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                Inserts a new node with provided data at the end of the chain
+              </td>
+              <td>
+                <pre>
+                  const list = new LinkedList();
+                  list.insertFirst('a');
+                  list.insertFirst('b');
+                  list.insertLast('c');
+                  list.getLast(); // returns node with data 'C'
                 </pre>
               </td>
             </tr>
