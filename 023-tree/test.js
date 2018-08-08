@@ -27,13 +27,13 @@ describe('Node', () => {
   });
 });
 
-describe.skip('Tree', () => {
+describe('Tree', () => {
   test('starts empty', () => {
     const t = new Tree();
     expect(t.root).toEqual(null);
   });
 
-  test('Can traverse bf', () => {
+  test('Can traverse BreadthFirst', () => {
     const letters = [];
     const t = new Tree();
     t.root = new Node('a');
@@ -41,25 +41,25 @@ describe.skip('Tree', () => {
     t.root.add('c');
     t.root.children[0].add('d');
 
-    t.traverseBF(node => {
+    t.traverseBreadthFirst((node) => {
       letters.push(node.data);
     });
 
     expect(letters).toEqual(['a', 'b', 'c', 'd']);
   });
 
-  test('Can traverse DF', () => {
+  test('Can traverse DepthFirst', () => {
     const letters = [];
     const t = new Tree();
     t.root = new Node('a');
     t.root.add('b');
-    t.root.add('d');
-    t.root.children[0].add('c');
+    t.root.add('c');
+    t.root.children[0].add('d');
 
-    t.traverseDF(node => {
+    t.traverseDepthFirst((node) => {
       letters.push(node.data);
     });
 
-    expect(letters).toEqual(['a', 'b', 'c', 'd']);
+    expect(letters).toEqual(['a', 'b', 'd', 'c']);
   });
 });
