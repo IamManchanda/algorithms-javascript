@@ -17,16 +17,21 @@ const selectionSort = (arr) => {
   return arr;
 };
 
-const mergeSort = (arr) => {
-};
-
 const merge = (left, right) => {
+  const results = [];
+  while (left.length && right.length) (left[0] < right[0]) ? results.push(left.shift()) : results.push(right.shift());
+  return [...results, ...left, ...right];
 };
 
+const mergeSort = (arr) => {
+  if (arr.length === 1) return arr;
+  const centerPoint = Math.floor(arr.length / 2);
+  return merge(mergeSort(arr.slice(0, centerPoint)), mergeSort(arr.slice(centerPoint)));
+};
 
 module.exports = { 
   bubbleSort, 
   selectionSort, 
-  mergeSort, 
   merge, 
+  mergeSort, 
 };

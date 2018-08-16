@@ -1,8 +1,8 @@
 const { 
   bubbleSort, 
   selectionSort, 
-  mergeSort, 
   merge,
+  mergeSort, 
 } = require('./index');
 
 function getArray() {
@@ -25,7 +25,7 @@ describe('Selection sort', () => {
   });
 });
 
-describe.skip('Merge sort', () => {
+describe('Merge sort', () => {
   test('merge function can join together two sorted arrays', () => {
     const left = [1, 10];
     const right = [2, 8, 12];
