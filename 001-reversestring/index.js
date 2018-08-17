@@ -1,6 +1,9 @@
 // Solution 1
 const reverse1 = (str) => str.split('').reverse().join('');
 
+// Solution 1a
+const reverse1a = (str) => [...str].reverse().join('');
+
 // Solution 2
 const reverse2 = (str) => {
   let reversed = '';
