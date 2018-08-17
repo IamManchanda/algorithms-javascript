@@ -1,6 +1,8 @@
 # Algorithms & Data Structures in JavaScript.
 
-This repository has been made while learning [from this tutorial](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/) by [Stephen Grider](https://twitter.com/ste_grider).
+This repository has been made while learning [from this tutorial](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/) by [Stephen Grider](https://twitter.com/ste_grider). 
+
+That being said, I am planning to update this project with some more questions by learning [from this tutorial](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/) by [Colt Steele](https://www.udemy.com/user/coltsteele/).
 
 ## Where are Questions and their respective Answers? What about Tests?
 
