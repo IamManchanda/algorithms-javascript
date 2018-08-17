@@ -2,6 +2,7 @@
 const reverse1 = (str) => str.split('').reverse().join('');
 
 // Solution 1a
+// ES6 Shorthand for solution 1
 const reverse1a = (str) => [...str].reverse().join('');
 
 // Solution 2
