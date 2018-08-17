@@ -4,6 +4,8 @@ This repository has been made while learning [from this tutorial](https://www.ud
 
 That being said, I am planning to update this project with some more questions by learning [from this tutorial](https://www.udemy.com/js-algorithms-and-data-structures-masterclass/) by [Colt Steele](https://www.udemy.com/user/coltsteele/).
 
+This repository started its origin as a fork from [this repository's starter boilerplate](https://github.com/StephenGrider/AlgoCasts/tree/master/exercises). That being said, the solution code is all written by me while learning from tutorial with my [preferred coding style](./.eslintrc.js).
+
 ## Where are Questions and their respective Answers? What about Tests?
 
 - **Question:** All folders have specific `README.md` where respective question has been asked.
