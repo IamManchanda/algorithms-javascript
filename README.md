@@ -6,6 +6,8 @@ That being said, I am planning to update this project with some more questions b
 
 This repository started its origin as a fork from [this repository's starter boilerplate](https://github.com/StephenGrider/AlgoCasts/tree/master/exercises). That being said, the solution code is all written by me while learning from tutorial with my [preferred coding style](./.eslintrc.js).
 
+**License Concerns:** The starting forked code has a [GNU License](https://github.com/StephenGrider/AlgoCasts/blob/master/LICENSE) and same is the case with me. So there is no Plagiarism concerns anyways. Feel free to fork, only thing you shouldn't do is make your own course out of it as mentioned [here](https://github.com/StephenGrider/AlgoCasts/issues/33#issuecomment-421508234) by Stephen Grider.
+
 ## Where are Questions and their respective Answers? What about Tests?
 
 - **Question:** All folders have specific `README.md` where respective question has been asked.
