@@ -11,6 +11,17 @@ const fizzBuzz1 = (n) => {
 // Solution 2
 // => https://codepen.io/IamManchanda/pen/KZXQYr
 const range = (count) => Array.from({ length: count }, (v, i) => i + 1); // Helper Function
+
+// or, you can Hack the prototype of `Number` Object with iterators and generators
+
+/*
+ * Number.prototype[Symbol.iterator] = function* () {
+ *  for (let i = 1; i <= this; i += 1) yield i;
+ * };
+ *
+ * const range = (count) => [...count];
+ */
+
 const fizzBuzz2 = (n) => {
   for (i of range(n)) {
     if (i % (3 * 5) === 0) console.log('fizzbuzz'); 
