@@ -2,7 +2,7 @@
 
 This repository has been made while learning [from this tutorial](https://www.udemy.com/coding-interview-bootcamp-algorithms-and-data-structure/) by [Stephen Grider](https://twitter.com/ste_grider). 
 
-That being said, I am planning to update this project with some more questions soon. Check back soon!
+That being said, I am planning to update the project with some more questions soon. Check back soon!
 
 This repository started its origin as a fork from [this repository's starter boilerplate](https://github.com/StephenGrider/AlgoCasts/tree/master/exercises). That being said, the solution code is all written by me while learning from tutorial with my [preferred coding style](./.eslintrc.js).
 
